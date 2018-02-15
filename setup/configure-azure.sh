@@ -1,5 +1,5 @@
 #!/bin/bash
-# source: https://blogs.msdn.microsoft.com/eugene/2016/11/03/creating-azure-resources-with-terraform/
+# https://blogs.msdn.microsoft.com/eugene/2016/11/03/creating-azure-resources-with-terraform/
 
 # install azure cli
 AZ_REPO=$(lsb_release -cs)

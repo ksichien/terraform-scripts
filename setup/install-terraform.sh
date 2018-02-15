@@ -1,5 +1,5 @@
 #!/bin/bash
-# source: https://www.terraform.io/intro/getting-started/install.html
+# https://www.terraform.io/intro/getting-started/install.html
 
 INSTALLDIR='.terraform'
 LINK='https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_linux_amd64.zip'
