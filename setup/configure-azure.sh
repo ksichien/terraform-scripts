@@ -18,4 +18,4 @@ LOCATION='/tmp'
 IFS='/' read -r -a FILENAME <<< ${LINK}
 
 wget -P ${LOCATION} ${LINK}
-echo "Please execute the ${LOCATION}/${FILENAME[-1]} script, root is not required."
+echo "Please execute the ${LOCATION}/${FILENAME[-1]} script."
