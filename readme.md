@@ -32,11 +32,11 @@ $ touch terraform.tfvars
 ```
 $ terraform init
 ```
-6. Use the `plan` command to preview changes to your environment.
+6. Use the `plan` command to preview changes.
 ```
 $ terraform plan
 ```
-7. Use the `apply` command to push the changes through to your environment.
+7. Use the `apply` command to push changes through to your environment.
 ```
 $ terraform apply
 ```
