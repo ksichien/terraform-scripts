@@ -10,12 +10,12 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "myterraformgroup" {
   name     = "az-iac-ResourceGroup"
-  location = "West Europe"
+  location = "${var.location}"
 }
 
 resource "azurerm_virtual_network" "myterraformnetwork" {
   name                = "az-iac-nav-Vnet"
-  address_space       = ["10.0.0.0/16"]
+  address_space       = "${var.address_space}"
   location            = "${azurerm_resource_group.myterraformgroup.location}"
   resource_group_name = "${azurerm_resource_group.myterraformgroup.name}"
 }
@@ -24,7 +24,7 @@ resource "azurerm_subnet" "myterraformsubnet" {
   name                 = "az-iac-nav-Subnet"
   resource_group_name  = "${azurerm_resource_group.myterraformgroup.name}"
   virtual_network_name = "${azurerm_virtual_network.myterraformnetwork.name}"
-  address_prefix       = "10.0.2.0/24"
+  address_prefix       = "${var.address_prefix}"
 }
 
 resource "azurerm_public_ip" "myterraformpublicip" {
