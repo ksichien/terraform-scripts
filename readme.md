@@ -1,4 +1,4 @@
-# terraform-scripts
+# Terraform Scripts
 This is a small collection of Shell & Terraform scripts I've written to make life easier for myself.
 
 ## Overview
